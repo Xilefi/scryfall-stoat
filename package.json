@@ -1,0 +1,15 @@
+{
+  "name": "scryfall-stoat",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "revolt.js": "^7.2.0"
+  }
+}
