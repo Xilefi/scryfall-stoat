@@ -42,8 +42,6 @@ client.on("messageCreate", async (message) => {
     const setCode = parts.length > 1 ? parts[1] : undefined;
     const cardNumber = parts.length > 2 ? parts[2] : undefined;
 
-    console.log(`→ Carte : ${cardName} | Set: ${setCode || 'Any'} | Num: ${cardNumber || 'Any'} (image: ${isImage}, price: ${isPrice}, legal: ${isLegal}, rulings: ${isRulings})`);
-
     try {
       // 3. Recherche de la carte (passage des paramètres set/number)
       const result = await searchCard(cardName, setCode, cardNumber);
